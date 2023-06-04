@@ -1,5 +1,6 @@
 import "./App.css";
 import Interests from "./components/Interests";
+import Skills from "./components/Skills";
 
 function App() {
   const user = {
@@ -11,6 +12,7 @@ function App() {
       "Programming",
       "Computer Science",
     ],
+    skills: ["React JS", "Node JS"],
   };
   return (
     <>
@@ -18,6 +20,7 @@ function App() {
       <h2>{user.name}</h2>
       <hr />
       <Interests interests={user.interests} />
+      <Skills skills={user.skills} />
     </>
   );
 }

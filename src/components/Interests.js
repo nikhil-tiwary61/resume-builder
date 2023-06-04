@@ -3,8 +3,8 @@ export default function Interests({ interests }) {
     <>
       <p>Interests</p>
       <ul>
-        {interests.map((interest) => {
-          return <li>{interest}</li>;
+        {interests.map((interest, index) => {
+          return <li key={index}>{interest}</li>;
         })}
       </ul>
     </>
