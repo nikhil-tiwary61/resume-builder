@@ -1,12 +1,23 @@
 import "./App.css";
+import Interests from "./components/Interests";
 
 function App() {
-  const name = "Tim";
+  const user = {
+    name: "Nikhil",
+    interests: [
+      "Drawing",
+      "Photography",
+      " Design",
+      "Programming",
+      "Computer Science",
+    ],
+  };
   return (
     <>
       <h1>Resume</h1>
-      <h2>{name}</h2>
-      <br />
+      <h2>{user.name}</h2>
+      <hr />
+      <Interests interests={user.interests} />
     </>
   );
 }
