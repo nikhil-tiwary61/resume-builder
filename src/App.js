@@ -2,6 +2,7 @@ import "./App.css";
 import Interests from "./components/Interests";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
 
 function App() {
   const user = {
@@ -19,6 +20,10 @@ function App() {
       "Silvermine School of Arts",
       "Codeacademy",
     ],
+    experience: [
+      "Student Technology Intern for Wilton School District",
+      "Babysitter",
+    ],
   };
   return (
     <>
@@ -28,6 +33,7 @@ function App() {
       <Interests interests={user.interests} />
       <Skills skills={user.skills} />
       <Education institutes={user.institutes} />
+      <Experience experience={user.experience} />
     </>
   );
 }
