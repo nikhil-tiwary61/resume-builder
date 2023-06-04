@@ -1,6 +1,7 @@
 import "./App.css";
 import Interests from "./components/Interests";
 import Skills from "./components/Skills";
+import Education from "./components/Education";
 
 function App() {
   const user = {
@@ -13,6 +14,11 @@ function App() {
       "Computer Science",
     ],
     skills: ["React JS", "Node JS"],
+    education: [
+      "Wiltron High School",
+      "Silvermine School of Arts",
+      "Codeacademy",
+    ],
   };
   return (
     <>
@@ -21,6 +27,7 @@ function App() {
       <hr />
       <Interests interests={user.interests} />
       <Skills skills={user.skills} />
+      <Education institutes={user.institutes} />
     </>
   );
 }
