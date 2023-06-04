@@ -3,6 +3,7 @@ import Interests from "./components/Interests";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Extracurriculars from "./components/Extracurriculars";
 
 function App() {
   const user = {
@@ -24,6 +25,7 @@ function App() {
       "Student Technology Intern for Wilton School District",
       "Babysitter",
     ],
+    extracurriculars: ["Recycling Club", "Gardening Club", "Book Club"],
   };
   return (
     <>
@@ -32,8 +34,9 @@ function App() {
       <hr />
       <Interests interests={user.interests} />
       <Skills skills={user.skills} />
-      <Education institutes={user.institutes} />
+      <Education education={user.education} />
       <Experience experience={user.experience} />
+      <Extracurriculars extracurriculars={user.extracurriculars} />
     </>
   );
 }
