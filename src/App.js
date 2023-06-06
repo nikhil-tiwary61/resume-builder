@@ -1,4 +1,5 @@
 import "./App.css";
+import Border from "./components/Border";
 import Interests from "./components/Interests";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
@@ -33,7 +34,9 @@ function App() {
       <h2>{user.name}</h2>
       <hr />
       <Interests interests={user.interests} />
-      <Skills skills={user.skills} />
+      <Border>
+        <Skills skills={user.skills} />
+      </Border>
       <Education education={user.education} />
       <Experience experience={user.experience} />
       <Extracurriculars extracurriculars={user.extracurriculars} />
