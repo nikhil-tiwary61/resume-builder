@@ -1,5 +1,5 @@
-export default function Section({ sectionHead, children, items }) {
-  if (items.length === 0) {
+export default function Section({ sectionHead, children, itemsCount }) {
+  if (itemsCount === 0) {
     return;
   } else {
     return (
