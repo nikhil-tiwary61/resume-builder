@@ -1,12 +1,8 @@
-export default function Extracurriculars({ extracurriculars }) {
+export default function Extracurriculars({ children }) {
   return (
     <>
       <p>Extracurriculars</p>
-      <ul>
-        {extracurriculars.map((extracurricular, index) => {
-          return <li key={index}>{extracurricular}</li>;
-        })}
-      </ul>
+      {children}
     </>
   );
 }

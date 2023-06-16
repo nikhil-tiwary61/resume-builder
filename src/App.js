@@ -1,4 +1,5 @@
 import "./App.css";
+import List from "./components/List";
 import Button from "./components/Button";
 import Border from "./components/Border";
 import Interests from "./components/Interests";
@@ -40,7 +41,9 @@ function App() {
       </Border>
       <Education education={user.education} />
       <Experience experience={user.experience} />
-      <Extracurriculars extracurriculars={user.extracurriculars} />
+      <Extracurriculars>
+        <List layout="numbered" items={user.extracurriculars}></List>
+      </Extracurriculars>
       <Button>Print</Button>
     </>
   );
