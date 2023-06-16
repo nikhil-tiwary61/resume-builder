@@ -1,4 +1,5 @@
 import "./App.css";
+import Button from "./components/Button";
 import Border from "./components/Border";
 import Interests from "./components/Interests";
 import Skills from "./components/Skills";
@@ -40,6 +41,7 @@ function App() {
       <Education education={user.education} />
       <Experience experience={user.experience} />
       <Extracurriculars extracurriculars={user.extracurriculars} />
+      <Button>Print</Button>
     </>
   );
 }
