@@ -11,21 +11,21 @@ function App() {
       <h1>Resume</h1>
       <h2>{user.name}</h2>
       <hr />
-      <Section sectionHead="Interests">
+      <Section sectionHead="Interests" items={user.interests}>
         <List items={user.interests} />
       </Section>
       <Border>
-        <Section sectionHead="Skills">
+        <Section sectionHead="Skills" items={user.skills}>
           <List items={user.skills} />
         </Section>
       </Border>
-      <Section sectionHead="Education">
+      <Section sectionHead="Education" items={user.education}>
         <List items={user.education} />
       </Section>
-      <Section sectionHead="Experience">
+      <Section sectionHead="Experience" items={user.experience}>
         <List items={user.experience} />
       </Section>
-      <Section sectionHead="Extracurriculars">
+      <Section sectionHead="Extracurriculars" items={user.extracurriculars}>
         <List layout="numbered" items={user.extracurriculars} />
       </Section>
       <Button>Print</Button>
