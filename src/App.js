@@ -3,34 +3,9 @@ import Section from "./components/Section";
 import List from "./components/List";
 import Button from "./components/Button";
 import Border from "./components/Border";
-import Interests from "./components/Interests";
-import Skills from "./components/Skills";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
-import Extracurriculars from "./components/Extracurriculars";
+import { user } from "./components/data/data";
 
 function App() {
-  const user = {
-    name: "Nikhil",
-    interests: [
-      "Drawing",
-      "Photography",
-      " Design",
-      "Programming",
-      "Computer Science",
-    ],
-    skills: ["React JS", "Node JS"],
-    education: [
-      "Wiltron High School",
-      "Silvermine School of Arts",
-      "Codeacademy",
-    ],
-    experience: [
-      "Student Technology Intern for Wilton School District",
-      "Babysitter",
-    ],
-    extracurriculars: ["Recycling Club", "Gardening Club", "Book Club"],
-  };
   return (
     <>
       <h1>Resume</h1>
