@@ -2,8 +2,9 @@ import "./App.css";
 import Section from "./components/Section";
 import List from "./components/List";
 import Button from "./components/Button";
-import Border from "./components/Border";
+// import Border from "./components/Border";
 import { user } from "./components/data/data";
+import Theme from "./components/Theme";
 
 function App() {
   return (
@@ -14,11 +15,9 @@ function App() {
       <Section sectionHead="Interests" itemsCount={user.interests.length}>
         <List items={user.interests} />
       </Section>
-      <Border>
-        <Section sectionHead="Skills" itemsCount={user.skills.length}>
-          <List items={user.skills} />
-        </Section>
-      </Border>
+      <Section sectionHead="Skills" itemsCount={user.skills.length}>
+        <List items={user.skills} />
+      </Section>
       <Section sectionHead="Education" itemsCount={user.education.length}>
         <List items={user.education} />
       </Section>
@@ -32,6 +31,7 @@ function App() {
         <List layout="numbered" items={user.extracurriculars} />
       </Section>
       <Button>Print</Button>
+      <Theme></Theme>
     </>
   );
 }

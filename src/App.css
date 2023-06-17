@@ -8,3 +8,8 @@
   border-style: groove;
   padding: 10px;
 }
+
+.dark-mode{
+  background: #000;
+  color: white;
+}
